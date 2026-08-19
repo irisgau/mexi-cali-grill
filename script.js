@@ -51,3 +51,15 @@ if (langToggle) {
     applyLang(currentLang);
   });
 }
+
+// --- Sticky call-to-action: only show once the top section has scrolled away ---
+const stickyCall = document.querySelector('.sticky-call');
+const firstSection = document.querySelector('main > section');
+if (stickyCall && firstSection && 'IntersectionObserver' in window) {
+  const stickyObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      stickyCall.classList.toggle('visible', !entry.isIntersecting);
+    });
+  });
+  stickyObserver.observe(firstSection);
+}

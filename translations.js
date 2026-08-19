@@ -44,7 +44,6 @@ const TRANSLATIONS = {
       eyebrow: "Our Menu",
       title: "What's on the truck",
       lead: "This is our regular walk-up menu, a starting point for building your catering order. Reach out for family-style trays and per-person pricing.",
-      photoCaption: "Straight off our truck window",
       item1Name: "Classic Burrito", item1Desc: "Choice of meat, rice, beans, cilantro, onions, cheese, sour cream, guacamole, lettuce & salsa.",
       item2Name: "Mexi-Cali Burrito", item2Desc: "Double portion of meat, beans, corn, cheese, tomatoes, guacamole & salsa.",
       item3Name: "Shrimp Burrito", item3Desc: "Rice, beans, shrimp, cheese, guacamole, sour cream, lettuce, onions, cilantro & salsa.",
@@ -67,7 +66,7 @@ const TRANSLATIONS = {
     findUs: {
       eyebrow: "Find Our Truck",
       title: "We move around. Here's how to catch us",
-      lead: `Mexi-Cali Grill is an independent truck, so spots and hours can shift. None of that matters for catering, since <strong>we come to you.</strong> If you're hoping to grab lunch or a late-night bite instead, here are our two regular spots:`,
+      lead: `We move the truck around, but we're regulars at two spots each week. For catering, <strong>we come to you</strong> instead. If you're hoping to catch us for lunch or a late-night bite, here's where to look:`,
       card1Title: "Weekday Lunch Spot",
       card1When: "Monday – Friday · 11 AM – 5 or 6 PM",
       card1AddressHtml: `19th Ave & Irving St, San Francisco<br><span class="muted">(Inner Sunset)</span>`,
@@ -92,7 +91,7 @@ const TRANSLATIONS = {
       eyebrow: "About Us",
       title: "Meet Andrea and Alejandro",
       introLead: "The husband-and-wife team behind the truck.",
-      p1: "Andrea and Alejandro are married, and Mexi-Cali Grill is a family operation they run together. They've lived in San Francisco's Sunset neighborhood for 17 years, raising their three kids there.",
+      p1: "Mexi-Cali Grill is a family operation Andrea and Alejandro run together. They've lived in San Francisco's Sunset neighborhood for 17 years, raising their three kids there.",
       ctaTitle: "Bring Andrea and Alejandro's cooking to your event",
       ctaLead: "Email us your headcount, location, date, and time frame, and we'll take it from there."
     }
@@ -141,7 +140,6 @@ const TRANSLATIONS = {
       eyebrow: "Nuestro Menú",
       title: "Lo que hay en el camión",
       lead: "Este es nuestro menú regular de ventanilla, un punto de partida para armar tu pedido de catering. Contáctanos por bandejas familiares y precios por persona.",
-      photoCaption: "Directo de la ventanilla de nuestro camión",
       item1Name: "Burrito Clásico", item1Desc: "Elige tu carne, arroz, frijoles, cilantro, cebolla, queso, crema, guacamole, lechuga y salsa.",
       item2Name: "Burrito Mexi-Cali", item2Desc: "Doble porción de carne, frijoles, elote, queso, tomate, guacamole y salsa.",
       item3Name: "Burrito de Camarón", item3Desc: "Arroz, frijoles, camarón, queso, guacamole, crema, lechuga, cebolla, cilantro y salsa.",
@@ -164,7 +162,7 @@ const TRANSLATIONS = {
     findUs: {
       eyebrow: "Encuentra Nuestro Camión",
       title: "Nos movemos. Así nos puedes encontrar",
-      lead: `Mexi-Cali Grill es un camión independiente, así que los lugares y horarios pueden cambiar. Eso no importa para catering, porque <strong>nosotros vamos a ti.</strong> Si buscas venir a comer o un antojo nocturno, aquí están nuestros dos puntos regulares:`,
+      lead: `Movemos el camión, pero somos parte regular de dos lugares cada semana. Para catering, <strong>nosotros vamos a ti</strong> en cambio. Si buscas encontrarnos para comer o un antojo nocturno, aquí está dónde buscarnos:`,
       card1Title: "Punto de Comida entre Semana",
       card1When: "Lunes – Viernes · 11 AM – 5 o 6 PM",
       card1AddressHtml: `19th Ave y Irving St, San Francisco<br><span class="muted">(Inner Sunset)</span>`,
@@ -189,7 +187,7 @@ const TRANSLATIONS = {
       eyebrow: "Nosotros",
       title: "Conoce a Andrea y Alejandro",
       introLead: "La pareja detrás del camión.",
-      p1: "Andrea y Alejandro están casados, y Mexi-Cali Grill es un negocio familiar que llevan juntos. Han vivido en el vecindario Sunset de San Francisco por 17 años, criando ahí a sus tres hijos.",
+      p1: "Mexi-Cali Grill es un negocio familiar que Andrea y Alejandro llevan juntos. Han vivido en el vecindario Sunset de San Francisco por 17 años, criando ahí a sus tres hijos.",
       ctaTitle: "Lleva la cocina de Andrea y Alejandro a tu evento",
       ctaLead: "Escríbenos el número de invitados, ubicación, fecha y horario, y nosotros nos encargamos del resto."
     }
