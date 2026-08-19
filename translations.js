@@ -1,0 +1,215 @@
+const MAILTO = "mailto:24mexi.cali@gmail.com?subject=Catering%20Inquiry&body=Hi%20Mexi-Cali%20Grill%2C%0A%0AI%27d%20love%20a%20quote%20for%20catering.%0A%0ANumber%20of%20guests%3A%20%0ALocation%3A%20%0ADate%3A%20%0ATime%20frame%3A%20%0A%0AThanks!";
+
+const TRANSLATIONS = {
+  en: {
+    topbar: { msg: "Mon–Fri 11am–5/6pm @ 19th & Irving · Fri nights @ Space 550" },
+    nav: {
+      catering: "Catering", menu: "Menu", about: "About Us", findUs: "Find Our Truck",
+      reviews: "Reviews", contact: "Contact", emailCta: "Email to Book"
+    },
+    hero: {
+      eyebrow: "Bay Area Catering",
+      titleHtml: "Bring the truck.<br>Feed the crowd.",
+      sub: "Mexi-Cali Grill is a family-run, 4.8★-rated food truck serving fresh, made-to-order Mexican & California street food across the Bay Area. Book us for your office lunch, wedding, block party, or private event.",
+      ctaPrimary: "✉️ Email to Book Catering",
+      ctaSecondary: "How Catering Works",
+      noteHtml: `Prefer to talk? Call or text <a href="tel:+14156600469">(415) 660-0469</a> · <a href="https://www.instagram.com/24mexi.cali/" target="_blank" rel="noopener">Instagram @24Mexi.Cali</a>`
+    },
+    stats: {
+      ratingLabel: "Google rating", madeLabel: "Made to order",
+      area: "Bay Area", areaLabel: "We travel to you",
+      foodsLabel: "Tacos · Burritos · Quesadillas"
+    },
+    catering: {
+      eyebrow: "Catering",
+      title: "Real street-truck flavor, delivered to your event",
+      lead: "Every order is cooked fresh — tender carne asada, al pastor, carnitas, chorizo, and shrimp, piled into the burritos, tacos, quesadillas and nachos our regulars can't stop reviewing. Whether it's 20 people or 200, we'll work with you on a spread that fits.",
+      card1Title: "Office & Corporate",
+      card1Desc: "Team lunches, launch parties, all-hands — we'll park and serve, or box it up to go.",
+      card2Title: "Weddings & Parties",
+      card2Desc: "Birthdays, backyard parties, block parties, and weddings that want something more fun than a buffet line.",
+      card3Title: "Private & Community Events",
+      card3Desc: "School events, fundraisers, and neighborhood gatherings — ask about group pricing.",
+      areaNoteHtml: `<strong>Where we cater:</strong> our regular truck runs on a San Francisco permit at the spots below, but private catering isn't limited to SF — we serve the greater Bay Area.`,
+      howTitle: "Booking is simple",
+      step1Title: "Email us the details",
+      step1DescHtml: `Send us your <strong>number of guests, location, date, and time frame</strong> at <a href="${MAILTO}">24mexi.cali@gmail.com</a>.`,
+      step2Title: "Get your quote",
+      step2Desc: "We don't post flat catering prices — every event is different, so reach out and we'll send pricing and menu options that fit your group.",
+      step3Title: "We show up & cook",
+      step3Desc: "Fresh, made to order, right where you need us.",
+      ctaButton: "✉️ Email for Pricing & Availability"
+    },
+    menu: {
+      eyebrow: "Our Menu",
+      title: "What's on the truck",
+      lead: "This is our regular walk-up menu — a starting point for building your catering order. Reach out for family-style trays and per-person catering pricing.",
+      photoCaption: "Straight off our truck window",
+      item1Name: "Classic Burrito", item1Desc: "Choice of meat, rice, beans, cilantro, onions, cheese, sour cream, guacamole, lettuce & salsa.",
+      item2Name: "Mexi-Cali Burrito", item2Desc: "Double portion of meat, beans, corn, cheese, tomatoes, guacamole & salsa.",
+      item3Name: "Shrimp Burrito", item3Desc: "Rice, beans, shrimp, cheese, guacamole, sour cream, lettuce, onions, cilantro & salsa.",
+      item11Name: "Shrimp Torta", item11Desc: "Mexican bread, shrimp, cheese, beans, guacamole, lettuce, tomato, jalapeño, chips & salsa.",
+      item12Name: "Shrimp Super Quesadilla", item12Desc: "Flour tortilla, shrimp, cheese, sour cream, guacamole, lettuce, chips & salsa.",
+      item4Name: "Breakfast Burrito", item4Desc: "Chorizo with scrambled eggs, cheese & salsa.",
+      item5Name: "Street Taco", item5Desc: "Corn tortilla, choice of meat, cheese, cilantro, radish, grilled onion & salsa.",
+      item6Name: "Shrimp Taco", item6Desc: "Corn tortilla, shrimp, onion, cilantro, radish, grilled onion & salsa.",
+      item7Name: "Quesadilla Suiza", item7Desc: "Flour tortilla, choice of meat, cheese & salsa.",
+      item8Name: "Super Quesadilla", item8Desc: "Flour tortilla, choice of meat, cheese, sour cream, guacamole, lettuce, chips & salsa.",
+      item9Name: "Torta", item9Desc: "Mexican bread, choice of meat, cheese, beans, guacamole, lettuce, tomato, jalapeño, chips & salsa.",
+      item10Name: "Super Nachos", item10Desc: "Corn chips, choice of meat, cheese, guacamole, jalapeño & salsa.",
+      each: "ea",
+      meatTitle: "Choice of Meat",
+      meatList: "Steak (carne asada) · Chicken (pollo asado) · Al pastor (marinated pork) · Carnitas (shredded pork) · Chorizo (ground pork) · Shrimp (camarón)",
+      drinksTitle: "Drinks",
+      drinksList: "Canned sodas · Bottled water · Jarritos · Mexican Coke · Topo Chico · Aguas frescas",
+      fineprint: "Menu & pricing shown as served at our regular truck window and may change. Catering pricing isn't one-size-fits-all — email us your event details and we'll send a quote."
+    },
+    findUs: {
+      eyebrow: "Find Our Truck",
+      title: "We move around — here's how to catch us",
+      lead: `Mexi-Cali Grill is an independent truck, so spots and hours can shift. For catering, none of that matters — <strong>we come to you.</strong> If you're hoping to grab lunch (or a late-night bite), here are our two regular spots:`,
+      card1Title: "Weekday Lunch Spot",
+      card1When: "Monday – Friday · 11 AM – 5 or 6 PM",
+      card1AddressHtml: `19th Ave & Irving St, San Francisco<br><span class="muted">(Inner Sunset)</span>`,
+      card1Note: "Hours flex with demand most days — call or check Instagram to confirm.",
+      mapsBtn: "View on Google Maps",
+      card2Title: "Friday Late Night",
+      card2When: "Fridays · 9 PM – 2 AM",
+      card2AddressHtml: `Outside Space 550<br>550 Barneveld Ave, San Francisco<br><span class="muted">Latin dance club — salsa, 3 rooms, full bar</span>`,
+      space550Btn: "Space 550 on Instagram",
+      ctaButton: "Call or Text to Confirm Today's Spot",
+      noteHtml: `📸 We post daily locations and specials on Instagram — follow <a href="https://www.instagram.com/24mexi.cali/" target="_blank" rel="noopener">@24Mexi.Cali</a> to see where we'll be.`
+    },
+    reviews: { eyebrow: "What People Say", title: "4.8★ on Google", googleCite: "— Google review" },
+    contactCta: {
+      title: "Ready to book Mexi-Cali Grill for your event?",
+      lead: "Email us your headcount, location, date, and time frame — we'll take it from there.",
+      ctaButton: "✉️ Email Now to Book Catering"
+    },
+    footer: { copyright: "Mexi-Cali Grill Food Truck · San Francisco & the Bay Area" },
+    stickyCta: "✉️ Email to Book Catering",
+    about: {
+      eyebrow: "About Us",
+      title: "Meet Andrea & Alejandro",
+      introLead: "The husband-and-wife team who cook everything you taste from the Mexi-Cali Grill window.",
+      p1: "Andrea and Alejandro are married, and Mexi-Cali Grill is very much a family business. They've called San Francisco's Sunset neighborhood home for <strong>17 years</strong>, and they're raising their <strong>three kids</strong> right here — the same streets where the truck parks most weekdays.",
+      p2: "Ask around the neighborhood and you'll hear it before you taste it: regulars talk about how kind and welcoming they are as much as they talk about the carne asada. That's not an accident — Andrea and Alejandro built this truck to feel like an extension of their own kitchen, and after nearly two decades in the Sunset, they're as much a fixture of the block as the truck itself.",
+      h1Title: "Married & running it together",
+      h1Desc: "Andrea and Alejandro run every part of Mexi-Cali Grill side by side, from the grill to the books.",
+      h2Title: "17 years in the Sunset",
+      h2Desc: "Nearly two decades in the same San Francisco neighborhood — long enough to know it, and be known by it.",
+      h3Title: "Raising 3 kids nearby",
+      h3Desc: "Their three children are growing up in the same neighborhood the truck calls home.",
+      h4Title: "A warm, familiar presence",
+      h4Desc: "Regulars keep coming back for the welcome as much as the food — it shows up in every review.",
+      ctaTitle: "Bring Andrea & Alejandro's cooking to your event",
+      ctaLead: "Email us your headcount, location, date, and time frame — we'll take it from there."
+    }
+  },
+
+  es: {
+    topbar: { msg: "Lun–Vie 11am–5/6pm en 19th y Irving · Viernes en la noche en Space 550" },
+    nav: {
+      catering: "Catering", menu: "Menú", about: "Nosotros", findUs: "Encuentra el Camión",
+      reviews: "Reseñas", contact: "Contacto", emailCta: "Escríbenos"
+    },
+    hero: {
+      eyebrow: "Catering en el Área de la Bahía",
+      titleHtml: "Trae el camión.<br>Alimenta a todos.",
+      sub: "Mexi-Cali Grill es un camión de comida familiar con 4.8★ en Google, sirviendo comida fresca y preparada al momento, de estilo Mexicano-Californiano, por toda el Área de la Bahía. Resérvanos para tu comida de oficina, boda, fiesta de cuadra o evento privado.",
+      ctaPrimary: "✉️ Escríbenos para Reservar",
+      ctaSecondary: "Cómo Funciona el Catering",
+      noteHtml: `¿Prefieres hablar? Llama o manda mensaje al <a href="tel:+14156600469">(415) 660-0469</a> · <a href="https://www.instagram.com/24mexi.cali/" target="_blank" rel="noopener">Instagram @24Mexi.Cali</a>`
+    },
+    stats: {
+      ratingLabel: "Calificación en Google", madeLabel: "Preparado al momento",
+      area: "Área de la Bahía", areaLabel: "Vamos a donde estés",
+      foodsLabel: "Tacos · Burritos · Quesadillas"
+    },
+    catering: {
+      eyebrow: "Catering",
+      title: "El sabor auténtico del camión, directo a tu evento",
+      lead: "Cada orden se cocina fresca — carne asada, al pastor, carnitas, chorizo y camarón tiernos, servidos en burritos, tacos, quesadillas y nachos que nuestros clientes no dejan de recomendar. Ya sean 20 personas o 200, armamos un menú que se ajuste a tu evento.",
+      card1Title: "Oficinas y Empresas",
+      card1Desc: "Comidas de equipo, lanzamientos, juntas generales — nos estacionamos y servimos, o lo empacamos para llevar.",
+      card2Title: "Bodas y Fiestas",
+      card2Desc: "Cumpleaños, fiestas en el patio, fiestas de cuadra y bodas que buscan algo más divertido que una línea de buffet.",
+      card3Title: "Eventos Privados y Comunitarios",
+      card3Desc: "Eventos escolares, recaudaciones de fondos y reuniones de vecinos — pregúntanos por precios de grupo.",
+      areaNoteHtml: `<strong>Dónde damos servicio:</strong> nuestro camión regular opera con un permiso de San Francisco en los puntos de abajo, pero el catering privado no se limita a SF — damos servicio a toda el Área de la Bahía.`,
+      howTitle: "Reservar es fácil",
+      step1Title: "Escríbenos los detalles",
+      step1DescHtml: `Envíanos el <strong>número de invitados, ubicación, fecha y horario</strong> a <a href="${MAILTO}">24mexi.cali@gmail.com</a>.`,
+      step2Title: "Recibe tu cotización",
+      step2Desc: "No publicamos precios fijos de catering — cada evento es diferente, así que contáctanos y te enviamos precios y opciones de menú según tu grupo.",
+      step3Title: "Llegamos y cocinamos",
+      step3Desc: "Fresco, preparado al momento, justo donde nos necesites.",
+      ctaButton: "✉️ Escríbenos por Precios y Disponibilidad"
+    },
+    menu: {
+      eyebrow: "Nuestro Menú",
+      title: "Lo que hay en el camión",
+      lead: "Este es nuestro menú regular de ventanilla — un punto de partida para armar tu pedido de catering. Contáctanos por bandejas familiares y precios de catering por persona.",
+      photoCaption: "Directo de la ventanilla de nuestro camión",
+      item1Name: "Burrito Clásico", item1Desc: "Elige tu carne, arroz, frijoles, cilantro, cebolla, queso, crema, guacamole, lechuga y salsa.",
+      item2Name: "Burrito Mexi-Cali", item2Desc: "Doble porción de carne, frijoles, elote, queso, tomate, guacamole y salsa.",
+      item3Name: "Burrito de Camarón", item3Desc: "Arroz, frijoles, camarón, queso, guacamole, crema, lechuga, cebolla, cilantro y salsa.",
+      item11Name: "Torta de Camarón", item11Desc: "Pan mexicano, camarón, queso, frijoles, guacamole, lechuga, tomate, jalapeño, totopos y salsa.",
+      item12Name: "Super Quesadilla de Camarón", item12Desc: "Tortilla de harina, camarón, queso, crema, guacamole, lechuga, totopos y salsa.",
+      item4Name: "Burrito de Desayuno", item4Desc: "Chorizo con huevo revuelto, queso y salsa.",
+      item5Name: "Taco de Calle", item5Desc: "Tortilla de maíz, elige tu carne, queso, cilantro, rábano, cebolla asada y salsa.",
+      item6Name: "Taco de Camarón", item6Desc: "Tortilla de maíz, camarón, cebolla, cilantro, rábano, cebolla asada y salsa.",
+      item7Name: "Quesadilla Suiza", item7Desc: "Tortilla de harina, elige tu carne, queso y salsa.",
+      item8Name: "Super Quesadilla", item8Desc: "Tortilla de harina, elige tu carne, queso, crema, guacamole, lechuga, totopos y salsa.",
+      item9Name: "Torta", item9Desc: "Pan mexicano, elige tu carne, queso, frijoles, guacamole, lechuga, tomate, jalapeño, totopos y salsa.",
+      item10Name: "Super Nachos", item10Desc: "Totopos, elige tu carne, queso, guacamole, jalapeño y salsa.",
+      each: "c/u",
+      meatTitle: "Elige tu Carne",
+      meatList: "Carne asada (steak) · Pollo asado (chicken) · Al pastor (marinado) · Carnitas (deshebrada) · Chorizo · Camarón",
+      drinksTitle: "Bebidas",
+      drinksList: "Refrescos enlatados · Agua embotellada · Jarritos · Coca-Cola Mexicana · Topo Chico · Aguas frescas",
+      fineprint: "El menú y los precios son los de nuestra ventanilla regular y pueden cambiar. El precio de catering no es igual para todos — escríbenos los detalles de tu evento y te enviamos una cotización."
+    },
+    findUs: {
+      eyebrow: "Encuentra Nuestro Camión",
+      title: "Nos movemos — así nos puedes encontrar",
+      lead: `Mexi-Cali Grill es un camión independiente, así que los lugares y horarios pueden cambiar. Para catering, eso no importa — <strong>nosotros vamos a ti.</strong> Si buscas venir a comer (o un antojo nocturno), aquí están nuestros dos puntos regulares:`,
+      card1Title: "Punto de Comida entre Semana",
+      card1When: "Lunes – Viernes · 11 AM – 5 o 6 PM",
+      card1AddressHtml: `19th Ave y Irving St, San Francisco<br><span class="muted">(Inner Sunset)</span>`,
+      card1Note: "El horario varía según la demanda la mayoría de los días — llama o revisa Instagram para confirmar.",
+      mapsBtn: "Ver en Google Maps",
+      card2Title: "Viernes en la Noche",
+      card2When: "Viernes · 9 PM – 2 AM",
+      card2AddressHtml: `Afuera de Space 550<br>550 Barneveld Ave, San Francisco<br><span class="muted">Club de baile latino — salsa, 3 salones, bar completo</span>`,
+      space550Btn: "Space 550 en Instagram",
+      ctaButton: "Llama o Manda Mensaje para Confirmar",
+      noteHtml: `📸 Publicamos ubicaciones diarias y especiales en Instagram — síguenos en <a href="https://www.instagram.com/24mexi.cali/" target="_blank" rel="noopener">@24Mexi.Cali</a> para saber dónde estaremos.`
+    },
+    reviews: { eyebrow: "Lo Que Dice la Gente", title: "4.8★ en Google", googleCite: "— Reseña de Google" },
+    contactCta: {
+      title: "¿Listo para reservar Mexi-Cali Grill para tu evento?",
+      lead: "Escríbenos el número de invitados, ubicación, fecha y horario — nosotros nos encargamos del resto.",
+      ctaButton: "✉️ Escríbenos para Reservar"
+    },
+    footer: { copyright: "Mexi-Cali Grill Food Truck · San Francisco y el Área de la Bahía" },
+    stickyCta: "✉️ Escríbenos para Reservar",
+    about: {
+      eyebrow: "Nosotros",
+      title: "Conoce a Andrea y Alejandro",
+      introLead: "La pareja que cocina todo lo que pruebas en la ventanilla de Mexi-Cali Grill.",
+      p1: "Andrea y Alejandro están casados, y Mexi-Cali Grill es realmente un negocio familiar. Han vivido en el vecindario Sunset de San Francisco por <strong>17 años</strong>, y están criando a sus <strong>tres hijos</strong> aquí mismo — en las mismas calles donde el camión se estaciona casi todos los días entre semana.",
+      p2: "Pregunta por el vecindario y lo escucharás antes de probarlo: los clientes hablan de lo amables y acogedores que son tanto como hablan de la carne asada. No es casualidad — Andrea y Alejandro construyeron este camión para que se sintiera como una extensión de su propia cocina, y después de casi dos décadas en el Sunset, son tan parte del barrio como el camión mismo.",
+      h1Title: "Casados y trabajando juntos",
+      h1Desc: "Andrea y Alejandro llevan cada parte de Mexi-Cali Grill juntos, desde la parrilla hasta las cuentas.",
+      h2Title: "17 años en el Sunset",
+      h2Desc: "Casi dos décadas en el mismo vecindario de San Francisco — suficiente tiempo para conocerlo, y que los conozcan.",
+      h3Title: "Criando a 3 hijos cerca",
+      h3Desc: "Sus tres hijos están creciendo en el mismo vecindario donde el camión tiene su hogar.",
+      h4Title: "Una presencia cálida y familiar",
+      h4Desc: "Los clientes regresan tanto por la bienvenida como por la comida — se nota en cada reseña.",
+      ctaTitle: "Lleva la cocina de Andrea y Alejandro a tu evento",
+      ctaLead: "Escríbenos el número de invitados, ubicación, fecha y horario — nosotros nos encargamos del resto."
+    }
+  }
+};

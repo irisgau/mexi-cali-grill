@@ -127,7 +127,12 @@ p{ margin:0 0 1em; }
   gap:24px;
 }
 .logo{ display:flex; align-items:center; gap:10px; margin-right:auto; }
-.logo-mark{ font-size:1.6rem; }
+.logo-mark{
+  width:34px; height:34px;
+  border-radius:50%;
+  object-fit:cover;
+  flex-shrink:0;
+}
 .logo-text{
   font-family:var(--font-display);
   font-weight:700;
@@ -144,6 +149,23 @@ p{ margin:0 0 1em; }
   transition:color 0.15s;
 }
 .main-nav a:hover{ color:var(--terracotta); }
+.main-nav a.nav-current{ color:var(--terracotta-dark); }
+
+.header-actions{ display:flex; align-items:center; gap:12px; flex-shrink:0; }
+
+.lang-toggle{
+  border:2px solid var(--charcoal);
+  background:transparent;
+  color:var(--charcoal);
+  font-weight:800;
+  font-size:0.82rem;
+  letter-spacing:0.03em;
+  padding:0.5em 0.85em;
+  border-radius:999px;
+  cursor:pointer;
+  transition:background .15s ease, color .15s ease;
+}
+.lang-toggle:hover{ background:var(--charcoal); color:var(--white); }
 
 .header-cta{ flex-shrink:0; }
 
@@ -257,6 +279,18 @@ p{ margin:0 0 1em; }
 .step p{ color:var(--charcoal-soft); font-size:0.95rem; margin:0; }
 .step a{ font-weight:800; color:var(--terracotta-dark); text-decoration:underline; }
 
+.area-note{
+  display:flex; align-items:flex-start; gap:14px;
+  max-width:680px; margin:40px auto 0;
+  background:var(--cream-2);
+  border:1px solid rgba(43,32,22,0.08);
+  border-radius:14px;
+  padding:20px 24px;
+}
+.area-note-icon{ font-size:1.3rem; line-height:1.4; }
+.area-note p{ margin:0; font-size:0.95rem; color:var(--charcoal-soft); }
+.area-note strong{ color:var(--charcoal); }
+
 .catering-cta{ text-align:center; margin-top:56px; }
 
 /* ---------- Menu ---------- */
@@ -362,7 +396,8 @@ p{ margin:0 0 1em; }
   font-size:0.95rem;
   margin-bottom:0.6em;
 }
-.location-address{ font-size:1.02rem; font-weight:700; margin-bottom:1.1em; line-height:1.4; }
+.location-address{ font-size:1.02rem; font-weight:700; margin-bottom:0.5em; line-height:1.4; }
+.location-flex{ font-size:0.85rem; color:var(--charcoal-soft); margin-bottom:1em; }
 .location-actions{ display:flex; gap:10px; flex-wrap:wrap; }
 .location-actions .btn{ padding:0.65em 1.2em; font-size:0.88rem; }
 
@@ -419,12 +454,57 @@ p{ margin:0 0 1em; }
   transition:background .15s ease;
 }
 .contact-method:hover{ background:rgba(255,255,255,0.26); }
+.contact-method-primary{
+  background:var(--white);
+  color:var(--terracotta-dark);
+}
+.contact-method-primary:hover{ background:var(--cream); }
 .contact-icon{ font-size:1.2rem; }
 .contact-cta .btn-primary{
   background:var(--white);
   color:var(--terracotta-dark);
 }
 .contact-cta .btn-primary:hover{ background:var(--cream); }
+
+/* ---------- About page ---------- */
+.about-hero{ background:var(--cream-2); padding:64px 0; }
+.about-hero-inner{
+  display:grid; grid-template-columns:1.1fr 0.9fr; gap:48px; align-items:center;
+}
+.about-hero-text .eyebrow{ color:var(--terracotta-dark); }
+.about-hero-text h1{ font-size:clamp(2rem,4vw,3rem); margin-bottom:0.4em; }
+.about-hero-text .lead{ margin:0; }
+.about-hero-photo img{
+  width:100%; height:100%; aspect-ratio:4/5; object-fit:cover;
+  border-radius:20px;
+  box-shadow:var(--shadow-lg);
+}
+
+.about-body{ padding:80px 0; background:var(--white); }
+.about-body-inner{ max-width:760px; }
+.about-p{ font-size:1.08rem; color:var(--charcoal-soft); }
+.about-p strong{ color:var(--charcoal); }
+
+.about-highlights{
+  display:grid; grid-template-columns:repeat(2,1fr); gap:24px;
+  margin-top:48px;
+}
+.about-highlight{
+  background:var(--cream);
+  border-radius:14px;
+  padding:26px 24px;
+}
+.about-highlight-icon{ font-size:1.8rem; display:block; margin-bottom:10px; }
+.about-highlight h3{ font-size:1.05rem; margin-bottom:0.4em; }
+.about-highlight p{ margin:0; font-size:0.92rem; color:var(--charcoal-soft); }
+
+.about-cta{
+  background:linear-gradient(135deg, var(--terracotta), var(--terracotta-dark));
+  color:var(--white);
+  padding:80px 0;
+}
+.about-cta h2{ color:var(--white); font-size:clamp(1.7rem,3.2vw,2.3rem); max-width:20ch; margin-left:auto; margin-right:auto; }
+.about-cta .lead{ color:rgba(255,255,255,0.92); margin:0 auto 32px; }
 
 /* ---------- Footer ---------- */
 .site-footer{ background:var(--charcoal); color:rgba(253,246,233,0.75); padding:40px 0 90px; }
@@ -457,6 +537,9 @@ p{ margin:0 0 1em; }
   .gallery{ grid-template-columns:1fr; height:auto; }
   .gallery-img{ height:220px; }
   .location-grid{ grid-template-columns:1fr; }
+  .about-hero-inner{ grid-template-columns:1fr; }
+  .about-hero-photo{ max-width:420px; margin:0 auto; }
+  .about-highlights{ grid-template-columns:1fr; }
 }
 
 @media (max-width: 760px){
